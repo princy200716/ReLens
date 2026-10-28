@@ -1,0 +1,122 @@
+
+.contact-section {
+  padding: 100px 7%;
+  background: #080b12;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-eyebrow {
+  color: #8c9eff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.contact-container h2 {
+  font-size: clamp(36px, 5vw, 60px);
+  margin: 15px 0;
+  letter-spacing: -2px;
+}
+
+.contact-container h2 span {
+  color: #8c9eff;
+}
+
+.contact-description {
+  color: #a5adbd;
+  max-width: 600px;
+  margin: 0 auto 45px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-card {
+  position: relative;
+  text-align: left;
+  padding: 28px 20px;
+  min-width: 0;
+  border: 1px solid #252c3b;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #131927, #0b0e16);
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: #8c9eff;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #222b45;
+  color: #aab6ff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contact-card h3 {
+  margin: 22px 0 10px;
+  font-size: 18px;
+}
+
+.contact-card p {
+  color: #a5adbd;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  color: #8c9eff;
+}
+
+.contact-footer {
+  margin-top: 55px;
+  padding-top: 25px;
+  border-top: 1px solid #252c3b;
+  color: #81899b;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 70px 5%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+}
